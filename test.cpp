@@ -8,7 +8,7 @@ BOOST_AUTO_TEST_SUITE( test_suite )
     BOOST_AUTO_TEST_CASE( test_version )
     {
         auto console = spdlog::stdout_logger_st("console");
-        console->info("test 1version()");
+        console->info("test version()");
 
         BOOST_CHECK( version() > 0 );
     }
