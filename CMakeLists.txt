@@ -4,7 +4,7 @@ project(helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 set(CMAKE_CXX_STANDARD 14)
 
-configure_file(version.h.in PROJECT_SOURCE_DIR/version.h)
+configure_file(version.h.in ../version.h)
 
 add_executable(helloworld_cli main.cpp)
 add_executable(test_version test.cpp)
